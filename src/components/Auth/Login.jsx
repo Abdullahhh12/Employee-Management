@@ -35,8 +35,7 @@ const Login = ({handleLogin}) => {
       };
 
   return (
-    <div className='flex w-screen h-screen flex-col items-center space-y-5 justify-center'>
-
+    <div className='flex w-full h-full mt-10 flex-col items-center space-y-5 justify-center'>
         <div className='text-4xl md:text-5xl text-green-400 '>
             <h1>Log In</h1>
         </div>
@@ -61,9 +60,9 @@ const Login = ({handleLogin}) => {
       {!isAdminLogin && (
         <button
           onClick={adminLoginHandler}
-          className="bg-red-400 py-1 px-2 text-black rounded-md"
+          className="border-blue-300 border-2 py-1 px-2 rounded-md"
         >
-          Admin Login?
+          Admin Login
         </button>
       )}
        

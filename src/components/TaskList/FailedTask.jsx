@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FailedTask = () => {
+const FailedTask = ({data}) => {
   return (
     <div className="flex-shrink-0 h-[300px] w-[260px] md:max-w-[300px] bg-red-400 p-5 rounded-xl">
    <div className="flex justify-between items-center">
@@ -10,7 +10,7 @@ const FailedTask = () => {
     <h2 className="py-2 text-2xl font-semibold">{data.title}</h2>
     <p>{data.description}</p>
 <div className='mt-2'>
-    <button className='bg-red-400 rounded-md py-1 px-2'>Failed</button>
+    <button className='bg-red-800 rounded-md py-1 px-2'>Failed</button>
 </div>
 
   </div>

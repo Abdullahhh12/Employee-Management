@@ -2,12 +2,12 @@ const employees = [
     {
         "id": 1,
         "name": "John",
-        "email": "emp@me.com",
+        "email": "john@me.com",
         "password": "123",
         "taskNumber": {
             "active": 1,
             "completed": 1,
-            "new": 1,
+            "new": 0,
             "failed": 0
         },
         "tasks": [
@@ -17,14 +17,14 @@ const employees = [
                 "category": "Content Creation",
                 "date": "2025-01-09",
                 "active": true,
-                "newTask": true,
+                "newTask": false,
                 "completed": false,
                 "failed": false
             },
             {
                 "title": "Design a Website",
                 "description": "Create a landing page for the marketing campaign.",
-                "category": "Web Development",
+                "category": "Web Dev",
                 "date": "2025-01-08",
                 "active": false,
                 "newTask": false,
@@ -41,7 +41,7 @@ const employees = [
         "taskNumber": {
             "active": 1,
             "completed": 1,
-            "new": 1,
+            "new": 0,
             "failed": 0
         },
         "tasks": [
@@ -51,7 +51,7 @@ const employees = [
                 "category": "IT Operations",
                 "date": "2025-01-06",
                 "active": true,
-                "newTask": true,
+                "newTask": false,
                 "completed": false,
                 "failed": false
             },
@@ -92,7 +92,7 @@ const employees = [
             {
                 "title": "Update Website UI",
                 "description": "Enhance the user interface for better accessibility.",
-                "category": "Web Development",
+                "category": "Web Dev",
                 "date": "2025-01-03",
                 "active": true,
                 "newTask": false,
@@ -143,7 +143,7 @@ const employees = [
         "taskNumber": {
             "active": 1,
             "completed": 1,
-            "new": 1,
+            "new": 0,
             "failed": 0
         },
         "tasks": [
@@ -153,7 +153,7 @@ const employees = [
                 "category": "Documentation",
                 "date": "2025-01-01",
                 "active": true,
-                "newTask": true,
+                "newTask": false,
                 "completed": false,
                 "failed": false
             },

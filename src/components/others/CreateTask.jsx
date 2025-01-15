@@ -70,12 +70,12 @@ const CreateTask = () => {
 
           <div>
             <h3 className='text-lg text-gray-200 mb-0.5 '>Date</h3>
-            <input value={date} onChange={(e)=>{setTaskDate(e.target.value)}} type="date" className='bg-transparent rounded py-1 px-2 w-4/5 outline-none border-[1px] border-gray-400 mb-4'  />
+            <input value={date} onChange={(e)=>{setTaskDate(e.target.value)}} type="date" placeholder='12/12/2025' className='bg-transparent rounded py-1 px-2 w-4/5 outline-none border-[1px] border-gray-400 mb-4'  />
           </div>
 
            <div>
             <h3 className='text-lg text-gray-200 mb-0.5  '>Assign to</h3>
-            <input value={assignTo} onChange={(e)=>{setAssignTo(e.target.value)}} type="text" placeholder='John,Tom,etc' className= 'bg-transparent rounded py-1 px-2 w-4/5 outline-none border-[1px] border-gray-400 mb-4'  />
+            <input value={assignTo} onChange={(e)=>{setAssignTo(e.target.value)}} type="text" placeholder='John,Mike,Emily,etc' className= 'bg-transparent rounded py-1 px-2 w-4/5 outline-none border-[1px] border-gray-400 mb-4'  />
            </div>  
 
             </div>
