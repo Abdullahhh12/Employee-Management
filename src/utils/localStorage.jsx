@@ -7,7 +7,7 @@ const employees = [
         "taskNumber": {
             "active": 1,
             "completed": 1,
-            "new": 0,
+            "new": 1,
             "failed": 0
         },
         "tasks": [
@@ -30,7 +30,18 @@ const employees = [
                 "newTask": false,
                 "completed": true,
                 "failed": false
+            },
+            {
+                "title": "Develop API Documentation",
+                "description": "Create detailed API documentation for the new software release, including examples and integration guides.",
+                "category": "Technical Writing",
+                "date": "2025-01-17",
+                "active": false,
+                "newTask": true,
+                "completed": false,
+                "failed": false
             }
+            
         ]
     },
     {

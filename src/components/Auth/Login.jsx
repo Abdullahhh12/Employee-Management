@@ -4,7 +4,7 @@ import { MdVisibility, MdVisibilityOff } from "react-icons/md";
 
 const Login = ({handleLogin}) => {
 
-    const [email, setEmail] = useState('mike@me.com');
+    const [email, setEmail] = useState('john@me.com');
     const [password, setPassword] = useState('123');
     const [show, setShow] = useState('password')
 

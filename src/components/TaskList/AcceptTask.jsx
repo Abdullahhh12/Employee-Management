@@ -5,7 +5,9 @@ const AcceptTask = ({data}) => {
   const [isCompleted, setIsCompleted] = useState(false);
   const [isFailed, setIsFailed] = useState(false);
   const [userData, setUserData] = useContext(AuthContext);
-  
+
+
+  //mark as completed
     const handleCompleted = () => {  
       const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
       
@@ -29,7 +31,7 @@ const AcceptTask = ({data}) => {
           taskNumber: {
             ...loggedInUser.data.taskNumber,
             active: loggedInUser.data.taskNumber.active - 1,
-            completed: loggedInUser.data.taskNumber.new + 1
+            completed: loggedInUser.data.taskNumber.completed + 1
           }
         };
   
@@ -52,6 +54,8 @@ const AcceptTask = ({data}) => {
       }
     };
 
+
+    //mark as failed
     const handleFailed = () => {  
       const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
       
@@ -75,7 +79,7 @@ const AcceptTask = ({data}) => {
           taskNumber: {
             ...loggedInUser.data.taskNumber,
             active: loggedInUser.data.taskNumber.active - 1,
-            failed: loggedInUser.data.taskNumber.new + 1
+            failed: loggedInUser.data.taskNumber.failed + 1
           }
         };
   
